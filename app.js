@@ -42,3 +42,10 @@ function hasCertainKeys(arr,key){
         return key in val;
     });
 };
+
+//hasCertainValue
+function hasCertainValue(arr,key,value){
+    return arr.every(function(val){
+        return val[key] === value;
+    })
+}
